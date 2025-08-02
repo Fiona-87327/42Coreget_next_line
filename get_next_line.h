@@ -10,4 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
+# include <stdlib.h>
+# include <unistd.h>
+# include <fcntl.h>
+
+
+char *get_next_line(int fd);
+int open (const char* path, int flags, int mode);
+ssize_t read(int fildes, void *buf, size_t nbyte);
+
+
+#endif
