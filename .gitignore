@@ -10,12 +10,18 @@
 #                                                                              #
 # **************************************************************************** #
 
-.a
+*.a
+*.o
+*.out
 a.out
 .DS_Store
+*.dSYM
 test.c
 main.c
 test
 .vscode
+.idea/
+*.code-workspace
 settings.json
-
+cscope.*
+tags
