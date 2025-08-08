@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jiyawang <jiyawang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 20:14:28 by jiyawang          #+#    #+#             */
-/*   Updated: 2025/08/08 15:36:17 by jiyawang         ###   ########.fr       */
+/*   Created: 2025/08/08 15:35:16 by jiyawang          #+#    #+#             */
+/*   Updated: 2025/08/08 15:45:58 by jiyawang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "get_next_line.h"
 
-# include <fcntl.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <stddef.h>
+size_t	ft_strlen(const char *str)
+{
+	size_t	len;
 
-char	*get_next_line(int fd);
-int		open(const char *path, int flags, int mode);
-size_t	read(int fildes, void *buf, size_t nbyte);
-size_t	ft_strlen(const char *str);
-
-#endif
+	len = 0;
+	while (str[len])
+	{
+		len++;
+	}
+	return (len);
+}
