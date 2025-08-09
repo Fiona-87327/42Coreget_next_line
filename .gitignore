@@ -19,7 +19,7 @@ a.out
 test.c
 main.c
 test
-.txt
+*.txt
 .vscode
 .idea/
 *.code-workspace
