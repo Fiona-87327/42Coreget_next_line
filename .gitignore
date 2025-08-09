@@ -19,6 +19,7 @@ a.out
 test.c
 main.c
 test
+.txt
 .vscode
 .idea/
 *.code-workspace

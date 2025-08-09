@@ -41,3 +41,4 @@ static char	*ft_strrchr(const char *s, int c)
 			last = (char*)&s[i];
 	return(last);
 }
+
