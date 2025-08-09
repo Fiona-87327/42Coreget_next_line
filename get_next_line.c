@@ -11,3 +11,11 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+char	*get_next_line(int fd)
+{
+	int		b_read;
+	char	*c_buffer;
+
+	b_read = read(fd, c_buffer, 3);
+}
