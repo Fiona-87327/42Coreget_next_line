@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-static size_t	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	len;
 
@@ -24,7 +24,7 @@ static size_t	ft_strlen(const char *str)
 	return (len);
 }
 
-static char	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	if (!*s)
 		return (NULL);
