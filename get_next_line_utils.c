@@ -38,3 +38,31 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+
+char	*ft_strjoin(char *s1, char *s2)
+{
+	size_t	s1_len;
+	size_t	s2_len;
+	char	*result;
+	size_t	i;
+	size_t	j;
+
+	if (!s1 || !s2)
+		return (NULL);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
+	result = malloc(sizeof(char) * (s1_len + s2_len + 1));
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (s1[i])
+	{
+		result[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (s2[j])
+		result[i++] = s2[j++];
+	result[i] = '\0';
+	return (result);
+}
