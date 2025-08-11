@@ -24,7 +24,8 @@
 # endif
 
 char	*get_next_line(int fd);
-int		open(const char *path, int flags, int mode);
-size_t	read(int fildes, void *buf, size_t nbyte);
+size_t	ft_strlen(const char *str);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strjoin(char *s1, char *s2);
 
 #endif
