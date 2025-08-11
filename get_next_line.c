@@ -17,5 +17,9 @@ char	*get_next_line(int fd)
 	int		b_read;
 	char	*c_buffer;
 
+	c_buffer = malloc(sizeof(char) * (3 + 1));
+	if (!c_buffer)
+		return (NULL);
 	b_read = read(fd, c_buffer, 3);
+	return (c_buffer);
 }
