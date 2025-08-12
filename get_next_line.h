@@ -6,7 +6,7 @@
 /*   By: jiyawang <jiyawang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 20:14:28 by jiyawang          #+#    #+#             */
-/*   Updated: 2025/08/08 15:36:17 by jiyawang         ###   ########.fr       */
+/*   Updated: 2025/08/11 13:29:52 by jiyawang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
+#  define BUFFER_SIZE 42
 # endif
 
 char	*get_next_line(int fd);
-int		open(const char *path, int flags, int mode);
-size_t	read(int fildes, void *buf, size_t nbyte);
-
+size_t	ft_strlen(const char *str);
+char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strchr(const char *s, int c);
 #endif
