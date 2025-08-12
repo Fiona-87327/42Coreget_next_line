@@ -6,7 +6,7 @@
 /*   By: jiyawang <jiyawang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 20:14:45 by jiyawang          #+#    #+#             */
-/*   Updated: 2025/08/11 14:21:52 by jiyawang         ###   ########.fr       */
+/*   Updated: 2025/08/12 13:03:51 by jiyawang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ char	*ft_strjoin(char *s1, char *s2)
 	char	*result;
 	size_t	i;
 	size_t	j;
+
 
 	i = 0;
 	j = 0;
