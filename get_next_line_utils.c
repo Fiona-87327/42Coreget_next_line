@@ -11,10 +11,12 @@
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
 char	*ft_strdup(char *s1)
 {
-	char	*dest;
+	char			*dest;
 	unsigned int	i;
+
 	dest = (char *)malloc(ft_strlen(s1) + 1);
 	if (!dest)
 		return (NULL);
@@ -27,6 +29,7 @@ char	*ft_strdup(char *s1)
 	dest[i] = '\0';
 	return (dest);
 }
+
 size_t	ft_strlen(const char *str)
 {
 	size_t	len;
@@ -41,10 +44,10 @@ size_t	ft_strlen(const char *str)
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	size_t	i;
-	size_t 	j;
-	size_t	s_len;
-	char	*subs;
+	size_t		i;
+	size_t		j;
+	size_t		s_len;
+	char		*subs;
 
 	if (!s)
 		return (NULL);
