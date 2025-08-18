@@ -6,7 +6,7 @@
 /*   By: jiyawang <jiyawang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 20:14:45 by jiyawang          #+#    #+#             */
-/*   Updated: 2025/08/18 13:43:13 by jiyawang         ###   ########.fr       */
+/*   Updated: 2025/08/18 16:52:53 by jiyawang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ size_t	ft_strlen(const char *str)
 		return (0);
 	len = 0;
 	while (str[len] != '\0')
-	{
 		len++;
-	}
 	return (len);
 }
 
@@ -49,18 +47,19 @@ char	*ft_strjoin(char *s1, char *s2)
 	size_t	i;
 	size_t	j;
 
-	s1_len = 0;
 	if (s1)
 		s1_len = ft_strlen(s1);
-	s2_len = 0;
 	if (s2)
 		s2_len = ft_strlen(s2);
 	result = malloc(s1_len + s2_len + 1);
 	if (!result)
 		return (NULL);
 	i = -1;
-	while (s1 && s1[++i])
+	while (s1 && s1[i])
+	{
 		result[i] = s1[i];
+		i++;
+	}
 	j = 0;
 	while (s2 && s2[j])
 		result[i++] = s2[j++];

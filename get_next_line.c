@@ -6,7 +6,7 @@
 /*   By: jiyawang <jiyawang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 20:14:20 by jiyawang          #+#    #+#             */
-/*   Updated: 2025/08/18 13:43:46 by jiyawang         ###   ########.fr       */
+/*   Updated: 2025/08/18 13:54:03 by jiyawang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,32 +27,32 @@ char	*get_next_line(int fd)
 	return (c_buffer);
 }
 
-#include <fcntl.h>
-#include <stdio.h>
+// #include <fcntl.h>
+// #include <stdio.h>
 
-int main(void)
-{
-	int	fd;
-	int	count;
-	char *nextline;
+// int main(void)
+// {
+// 	int	fd;
+// 	int	count;
+// 	char *nextline;
 
-	count = 0;
-	fd = open("test.txt", O_RDONLY);
-	if (fd < 0)
-	{
-		perror("open");
-		return 1;
-	}
-	while (1)
-	{
-	nextline = get_next_line(fd);
-	if (nextline == NULL)
-		break;
-	count++;
-	printf("%d,%s\n", count, nextline);
-	free(nextline);
-	nextline = NULL;
-	}
-	close(fd);
-	return 0;
-}
+// 	count = 0;
+// 	fd = open("test.txt", O_RDONLY);
+// 	if (fd < 0)
+// 	{
+// 		perror("open");
+// 		return 1;
+// 	}
+// 	while (1)
+// 	{
+// 	nextline = get_next_line(fd);
+// 	if (nextline == NULL)
+// 		break;
+// 	count++;
+// 	printf("%d,%s\n", count, nextline);
+// 	free(nextline);
+// 	nextline = NULL;
+// 	}
+// 	close(fd);
+// 	return 0;
+// }
