@@ -14,8 +14,8 @@
 
 char	*ft_strdup(char *s1)
 {
-	char			*dest;
-	unsigned int	i;
+	char	*dest;
+	size_t	i;
 
 	dest = (char *)malloc(ft_strlen(s1) + 1);
 	if (!dest)
