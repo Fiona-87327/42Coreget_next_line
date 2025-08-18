@@ -39,7 +39,7 @@ size_t	ft_strlen(const char *str)
 	return (len);
 }
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t 	j;
@@ -63,21 +63,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	subs[i] = '\0';
 	return (subs);
-}
-
-char	*ft_strchr(const char *s, int c)
-{
-	if (!s)
-		return (NULL);
-	while (*s)
-	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
-	}
-	if (c == '\0')
-		return ((char *)s);
-	return (NULL);
 }
 
 char	*ft_strjoin(char *s1, char *s2)
