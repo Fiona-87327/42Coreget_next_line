@@ -49,10 +49,10 @@ static char	*_extr_line(char *line)
 	i = 0;
 	while (line[i] != '\n' && line[i] != '\0')
 		i++;
-	if (line[i] == 0 || line[1] == 0)
+	if (line[i] == '\0')
 		return (NULL);
-	new_stash = ft_substr(line, i + 1, ft_strlen(line) - i);
-	if (*new_stash == 0)
+	new_stash = ft_substr(line, i + 1, ft_strlen(line) - i - 1);
+	if (!new_stash || *new_stash == '\0')
 	{
 		free(new_stash);
 		new_stash = NULL;

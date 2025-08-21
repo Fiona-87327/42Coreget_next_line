@@ -78,7 +78,7 @@ char	*ft_substr(char *s, unsigned int start, size_t len)
 		subs[i] = s[start + i];
 		i++;
 	}
-	subs[i] = '\0';
+	subs[i] = 0;
 	return (subs);
 }
 
