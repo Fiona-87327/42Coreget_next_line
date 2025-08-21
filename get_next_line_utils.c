@@ -95,16 +95,10 @@ char	*ft_strjoin(char *s1, char *s2)
 	if (!res)
 		return (NULL);
 	while (s1[i] != '\0')
-	{
-		res[j++] = s1[i];
-		i++;
-	}
+		res[j++] = s1[i++];
 	i = 0;
 	while (s2[i] != '\0')
-	{
-		res[j++] = s2[i];
-		i++;
-	}
+		res[j++] = s2[i++];
 	res[j] = '\0';
 	return (res);
 }
